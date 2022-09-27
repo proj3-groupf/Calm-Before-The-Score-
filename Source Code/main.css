@@ -1,0 +1,182 @@
+body {
+    
+}
+
+.index-background {
+  background-image: url("../Web-Design-Challenge/assets/images/vecteezy-home-background-dark.jpg");
+  background position: center;
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.data-background {
+  background-image: url("../Web-Design-Challenge/assets/images/vecteezy-data-background.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 50%;
+  background-attachment: fixed;
+}
+
+.comparison-background {
+background-image: url("../Web-Design-Challenge/assets/images/vecteezy-chart-background.jpg");
+background-position: 0cm;
+background-repeat: none;
+background-size: 150%;
+background-attachment: fixed;
+}
+
+.navbar {
+  max-height: 50px;
+  background-color: rgb(255, 255, 255);
+  font-size: 15px; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* This controls the top left link back to the home page*/
+.navigation .navbar-brand {
+  margin-left: 0px;
+  padding: inherit;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.active, .dropdown-menu .dropdown-item:active a:hover {
+    background-color: rgb(255,255,255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown-item {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(168, 196, 247, 0.75);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  
+.nav-link:hover {
+  background-color:rgba(168, 196, 247, 0.75);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-brand:hover {  
+  background-color: rgba(168, 196, 247, 0.75);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Color and font size for all a href tags */
+a {
+  color: rgba(78, 90, 113, 0.75);
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+  /* 50% Width and Height for all img tags */
+.img-size {
+  width:600px;
+  height:375px;
+}
+
+    /* For a smaller version of an image - "thumb" short for thumbnail */
+    /* Original image was 800 x 550 so I quartered it */
+.thumb {
+  width: 200px;
+  height: 125px; 
+}
+
+
+/* unsure about this one. commenting out 
+.active, .panel:hover {
+  border-color:rgb(132, 14, 14);
+  border-style: solid;  
+} */
+
+/* used for the visualization pages for the image and text beneath it */
+.visualization {
+font-size: 12px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+} 
+
+/* unsure about this one. commenting out
+.title {
+  color: rgba(31, 53, 93, 0.75);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  padding-top: 10px;
+} */
+
+/* Font color, family and size for paragraphs */
+
+p {
+color: rgb(0, 0, 0);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 16px;
+}
+  
+/* Margins, padding, background color and font color for the rows/columns in the <div> tags */
+.landing-box {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 10px 30px 10px;
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+  /* background-color: rgb(255, 255, 255); */
+
+}
+  
+  /* unsure about this one. commenting out
+.table {
+  font-size: 15px;
+  border-top-color: rgb(255, 0, 0);
+} */
+
+
+/* setting some room for a footer */
+footer {
+background-color: #535353;
+border-top-style: solid;
+border-top-width: 2px;
+border-top-color: rgb(96, 127, 163);
+color: rgb(171, 222, 226);
+min-height: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 12px;
+text-align: center;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+padding-top: 15px;
+}
+
+/*
+@media(max-width: 600px) {
+  .navbar-expand-lg {
+  background-color: #617294;
+  }
+  .navbar {
+    max-height: none;
+    padding: inherit;
+  }
+  .navbar div {
+    margin: inherit;
+    background-color: rgb(255,255,255);
+  }
+  .navbar-brand {
+    padding: 10px;
+  }
+  button{
+    margin-right: 30px;
+  }
+  button:focus {
+    outline: 1px dotted;
+    outline: auto 5px;
+  }
+}
+*/
+
+
+

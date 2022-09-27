@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title> This is my Web Design Home Page</title>
+        <!--to use external bootstrap use the following-->
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body class="index-background">
+        <div class="navigation index">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">LATITUDE vs. THE WEATHER</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PLOTS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="../Web-Design-Challenge/visualizations/maxtemp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="../Web-Design-Challenge/visualizations/humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="../Web-Design-Challenge/visualizations/cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="../Web-Design-Challenge/visualizations/windspeed.html">Wind Speed</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparisons.html">COMPARISONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">DATA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/ladywyntir/Web-Design-Challenge" target="_blank">My GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+         
+    
+            
+      <!-- Bootstrap elements allow for your code to be formatted into a grid (rows and columns)-->
+      <!-- first, make a container use a div and then use the class="container"-->
+      <div class="container">
+
+        <!-- for each row, make a div that is class="row"-->
+        <div class="row">
+            <!-- for each row, specify columns up to 12 allowed -->
+            <div class="landing-box">
+                <!-- first row -->
+                <H1> Welcome to Marj's Web Design Challenge</h1>
+            </div>
+        </div> <!-- end of the first row-->
+
+        <!-- second row -->
+        <div class="row">
+            <div class="landing-box">
+            This is where the description of the project will go
+            </div>
+        </div><!-- end of the second row-->
+
+        <!-- third row -->
+        <div class="row">
+            <div class="landing-box">
+                <h3>Click each image to view the full page info.</h3>
+            </div>
+        </div><!-- end of the third row -->
+            
+        <!-- fourth row -->
+        <div class="row">
+            <div class="landing-box">
+        
+            <a href="../Web-Design-Challenge/visualizations/maxtemp.html">
+                <img src="../Web-Design-Challenge/assets/images/Fig1.png" class="thumb" title="Max Temperature" alt="City Latitude vs. Max Temperature (01/05/17"></a>
+            <a href="../Web-Design-Challenge/visualizations/humidity.html">
+                <img src="../Web-Design-Challenge/assets/images/Fig2.png" class="thumb" title="Humidity" alt="City Latitude vs. Humidity (01/05/17)"></a><br><br>
+            <a href="../Web-Design-Challenge/visualizations/cloudiness.html">
+                <img src="../Web-Design-Challenge/assets/images/Fig3.png" class="thumb" title="Cloudiness" alt="City Latitude vs. Cloudiness (01/05/17)"></a>
+            <a href="../Web-Design-Challenge/visualizations/windspeed.html">
+                    <img src="../Web-Design-Challenge/assets/images/Fig4.png" class="thumb" title="Wind Speed" alt="City Latitude vs. Wind Speed (01/05/17)"></a><br><br>
+                </div>
+            </div><!-- end of the fifth row -->
+        </div>
+
+
+    <!--This is for the rest of the interactive stuff -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+    </body>
+    
+    <footer> Module 11 - Web-Design-Challenge - Courtesy of Marjorie Muñoz</footer>
+</html>
