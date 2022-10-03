@@ -14,7 +14,9 @@ MONGODB_PORT = 27017
 DBS_NAME = 'nfl_db'
 COLLECTION_NAME = 'season_data'
 FIELDS = {'Date': True, 'HomeTeam': True, 'AwayTeam': True,
-          'AwayScore': True, 'HomeScore': True, 'StadiumID': True, '_id': False}
+          'AwayScore': True, 'HomeScore': True, 'StadiumID': True, 'Channel': True,
+          'ForecastTempLow': True, 'ForecastTempHigh': True, 'PrimaryColor': True, 'SecondaryColor': True, 'WikipediaLogoUrl': True, 'WikipediaWordMarkUrl': True, 'Capacity': True,
+          'Attendance': True, 'PlayingSurface': True, 'Type': True, 'Name_y': True, 'City_y': True, 'State': True, '_id': False}
 
 
 @app.route('/')
