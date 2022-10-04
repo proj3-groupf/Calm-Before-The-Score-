@@ -1,11 +1,8 @@
-from readline import insert_text
 from flask import Flask, render_template, redirect, jsonify
-from flask_pymongo import PyMongo
-from pymongo import MongoClient
-import json
-from bson import json_util
-from bson.json_util import dumps
 import flask
+from pymongo import MongoClient
+from bson import json_util, ObjectId
+import json
 
 app = flask.Flask(__name__)
 
@@ -17,6 +14,7 @@ FIELDS = {'Date': True, 'HomeTeam': True, 'AwayTeam': True,
           'AwayScore': True, 'HomeScore': True, 'StadiumID': True, 'Channel': True,
           'ForecastTempLow': True, 'ForecastTempHigh': True, 'PrimaryColor': True, 'SecondaryColor': True, 'WikipediaLogoUrl': True, 'WikipediaWordMarkUrl': True, 'Capacity': True,
           'Attendance': True, 'PlayingSurface': True, 'Type': True, 'Name_y': True, 'City_y': True, 'State': True, '_id': False}
+# FIELDS = {'homeTeams': True, 'wklyScores': True, '_id': False}
 connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
 collection = connection[DBS_NAME][COLLECTION_NAME]
 
@@ -33,8 +31,8 @@ def nfl_data():
     json_projects = []
     for project in projects:
         json_projects.append(project)
-    result = collection.find_one()
     # values = [row[0] for row in result]
+
     return json_projects
 
 
