@@ -12,8 +12,6 @@
 ## **Project Description**
 xxxxxxx (will fill this out later with the "story" once we are done with the website)
 
-<hr>
-
 ## **Part 1**: ETL the Data
 
 ### Extract
