@@ -1,6 +1,9 @@
 # Project 3: The Calm Before the Score
 ![NFL Season is Here](https://www.paranhomes.com/wp-content/uploads/2017/04/football-in-fall.jpg)
 
+![NFL Season is Here](https://www.paranhomes.com/wp-content/uploads/2017/04/football-in-fall.jpg {width=40px height=400px})
+
+
 <hr>
 
 ## Table of Contents
