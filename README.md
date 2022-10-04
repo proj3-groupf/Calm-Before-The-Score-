@@ -1,5 +1,5 @@
 # Project 3: The Calm Before the Score
-![Football Season is Here](https://www.paranhomes.com/wp-content/uploads/2017/04/football-in-fall.jpg)
+![Football Season is Here](https://giphy.com/gifs/nfl-sports-football-sport-tE48cYoHwM24ZiwauO)
 
 <hr>
 
