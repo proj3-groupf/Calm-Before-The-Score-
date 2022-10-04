@@ -3,7 +3,7 @@
 
 <img src="http://url.to/image.png](https://www.paranhomes.com/wp-content/uploads/2017/04/football-in-fall.jpg" align="left" height="48" width="48" ></a>
 
-<img src="" width=50% height=50%>
+<img src="http://url.to/image.png](https://www.paranhomes.com/wp-content/uploads/2017/04/football-in-fall.jpg" width=50% height=50%>
 
 
 <hr>
