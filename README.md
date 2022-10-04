@@ -1,7 +1,5 @@
 # Project 3: The Calm Before the Score
-![Football Season is Here](https://media.giphy.com/media/tE48cYoHwM24ZiwauO/giphy.gif)
-
-![Alt Text](https://media.giphy.com/media/tE48cYoHwM24ZiwauO/giphy.gif)
+![Football Season is Here](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 
 <hr>
 
