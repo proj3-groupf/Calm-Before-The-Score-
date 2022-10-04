@@ -31,32 +31,12 @@
     <!-------------------------------- Chart Begin ----------------------------------------------------->
     <div class="ct-chart"></div>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, nesciunt quam.
-      Quisquam adipisci accusantium quasi. Ea repellendus possimus velit cum vero vel,
-      iste quia dicta, fuga et facilis! Nostrum quas dolor eius optio ullam repellendus
-      ipsum laboriosam debitis provident deserunt?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure neque, dolore cumque
+      sit adipisci aperiam placeat rerum eius quibusdam, obcaecati voluptates quasi
+      consectetur, in voluptatibus tempore blanditiis nihil deserunt sunt necessitatibus
+      culpa ut et. At ex dolor recusandae quae qui. Temporibus ab doloribus a optio
+      laborum dolorum quaerat cum est?
     </p>
-    <script>
-      var getData = $.get("/data");
-
-      getData.done(function (results) {
-        var data = {
-          // A labels array that can contain any sort of values
-          labels: ["WK1", "WK2", "WK3", "WK4", "WK5"],
-          // Our series array that contains series objects or in this case series data arrays
-          series: [results.results],
-        };
-        var options = {
-          width: 700,
-          height: 200,
-        };
-
-        // Create a new line chart object where as first parameter we pass in a selector
-        // that is resolving to our chart container element. The Second parameter
-        // is the actual data object.
-        new Chartist.Line(".ct-chart", data, options);
-      });
-    </script>
 
     <!-------------------------------- Chart End ----------------------------------------------------->
     <!-------------------------------- CDN BEGIN ----------------------------------------------------->
@@ -64,7 +44,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"></script>
-    <link rel="stylesheet" src="../static/js/app.js" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="/static/js/app.js"></script>
     <!-------------------------------- CDN End ----------------------------------------------------->
   </body>
 </html>
