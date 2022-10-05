@@ -1,5 +1,5 @@
 # Project 3: The Calm Before the Score
-<img src="https://www.paranhomes.com/wp-content/uploads/2017/04/football-in-fall.jpg" width=100% height=20%>
+<img src="Image%20Resources/giphy.gif" width=100% height=20%>
 
 ![](Image%20Resources/giphy.gif)
 
