@@ -33,7 +33,7 @@ def nfl_data():
         json_projects.append(project)
     # values = [row[0] for row in result]
 
-    return json_projects
+    return jsonify(json_projects)
 
 
 if __name__ == '__main__':
