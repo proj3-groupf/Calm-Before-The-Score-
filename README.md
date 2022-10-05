@@ -21,7 +21,7 @@ For this project, we used the sportsdata [API](https://sportsdata.io/nfl-api), w
 - The score data was converted into a DataFrame which contained 272 rows (one for each game in the season). Unnecessary columns were dropped from the dataset.
 - The stadium data (50 rows) was merged into the score data using the "Stadium ID" field. This allowed us to get stadium information for each game played.
 - The team data (52 rows) was then merged into the new DataFrame using the "HomeTeam" field. This allowed us to get different hometeam stats for each game played.
-- 
+
 ### Load
 The final dataset was loaded into MongoDB using pymongo:
 
