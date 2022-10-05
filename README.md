@@ -25,7 +25,7 @@ xxxxxxx (will fill this out later with the "story" once we are done with the web
 ### Load
 - The final dataset was loaded into MongoDB using pymongo:
 
-```season_data.insert_many(nflDataFinalDF.to_dict('records'))```
+    ```season_data.insert_many(nflDataFinalDF.to_dict('records'))```
 
 
 
