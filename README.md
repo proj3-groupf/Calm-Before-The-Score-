@@ -1,8 +1,8 @@
 # Project 3: The Calm Before the Score
 <img src="Image%20Resources/giphy.gif" width=100% height=10%>
-- Group Name: Third and Long.
+**Group Name**: Third and Long.
 <br>
-- Members: Maheen Abdulwaheed, Gautam Iyer, Ashley Moore, Marjorie Muñoz, Elena Ortiz, Ami Patel, Sheyla Perez Nazco, Dantrell Person, Fannie Polcari
+**Members**: Maheen Abdulwaheed, Gautam Iyer, Ashley Moore, Marjorie Muñoz, Elena Ortiz, Ami Patel, Sheyla Perez Nazco, Dantrell Person, Fannie Polcari
 Austin Skorb, Daniel Webber.
 
 <hr>
