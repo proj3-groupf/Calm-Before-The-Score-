@@ -49,8 +49,43 @@
         </script>
       </canvas> -->
     </div>
+    
+    <!-- Atempt to throw in our Scatter Plot -->
+    <div class="container">
+      <div class="row">
+        <div id="scatter">
+          <h1>Scatter Plot for Temps</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="well">
+            <!--<select id="selDataset" onchange="optionChange(this.value)"></select> -->
+          </div>
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Metadata Info</h3>
+            </div>
+            <div id="sample-metadata" class="panel-body"></div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div id="bar"></div>
+        </div>
+        <div class="col-md-5">
+          <div id="gauge"></div><br><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="bubble"></div></div>
+        </div>
+      </div>
+    </div>
+
+
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    <script src="/static/js/app.js"></script>
+    <script src="./static/js/app.js"></script>
   </body>
 </html>
