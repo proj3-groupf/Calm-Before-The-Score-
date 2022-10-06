@@ -13,7 +13,7 @@ COLLECTION_NAME = 'season_data'
 FIELDS = {'Date': True, 'HomeTeam': True, 'AwayTeam': True,
           'AwayScore': True, 'HomeScore': True, 'StadiumID': True, 'Channel': True,
           'ForecastTempLow': True, 'ForecastTempHigh': True, 'PrimaryColor': True, 'SecondaryColor': True, 'WikipediaLogoUrl': True, 'WikipediaWordMarkUrl': True, 'Capacity': True,
-          'Attendance': True, 'PlayingSurface': True, 'Type': True, 'Name_y': True, 'City_y': True, 'State': True, '_id': False}
+          'Attendance': True, 'PlayingSurface': True, 'Type': True, 'Name_y': True, 'City_y': True, 'State': True, '_id': False, "Name_x": True}
 # FIELDS = {'homeTeams': True, 'wklyScores': True, '_id': False}
 connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
 collection = connection[DBS_NAME][COLLECTION_NAME]

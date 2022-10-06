@@ -6,7 +6,7 @@ function data_pull(selectionID) {
     var type = document.querySelector("#type");
     teamSelect.addEventListener("change", function (event) {
       var team = event.target.value;
-      var selectedType = type.value;
+      //var selectedType = type.value;
       var homeTeamGames = gameData.filter(function (game) {
         return team === game.HomeTeam
       });
@@ -75,18 +75,16 @@ function data_pull(selectionID) {
   function scatterdata_pull(selectedTeam) {
     d3.json("/data").then((data) => {
       var scatterData = data;
-      console.log("NFL data pulled for Scatter Plot", scatterData)
 
       var dataByTeam = scatterData.filter(
         (game) => game.HomeTeam == selectedTeam
       );
       // Setting variables needed for Line Chart
-      var xGameWeek = dataByTeam.map(game => game.Date);
       var y1HighTemp = dataByTeam.map(game => game.ForecastTempHigh);
       var y2LowTemp = dataByTeam.map(game => game.ForecastTempLow);
 
       var traceLineHigh = {
-        x: xGameWeek,
+        x: y1HighTemp.map((temp, index) => 'wk ' + (index + 1)),
         y: y1HighTemp,
         type: "scatter",
         name: 'High Temp',
@@ -99,7 +97,7 @@ function data_pull(selectionID) {
       // Line Chart - Trace2 for capacity
 
       var traceLineLow = {
-        x: xGameWeek,
+        x: y2LowTemp.map((temp, index) => 'wk ' + (index + 1)),
         y: y2LowTemp,
         type: "scatter",
         name: 'Low Temp',
@@ -113,7 +111,7 @@ function data_pull(selectionID) {
 
       // Formatting the bar plot
       var linePlotLayout = {
-        title: "<b>High vs. Low Temperature by Game Day</b>",
+        title: "<b>High vs. Low Temperature by Game Week</b>",
         xaxis: { autorange: true },
 
         yaxis: { autorange: true },
@@ -136,12 +134,11 @@ function bardata_pull(selectedTeam) {
       (game) => game.HomeTeam == selectedTeam
     );
     // Setting variables needed for Line Chart
-    var xGameWeek = dataByTeam.map(game => game.Date);
     var y1Attendance = dataByTeam.map(game => game.Attendance);
     var y2Capacity = dataByTeam.map(game => game.Capacity);
 
     var traceAttendance = {
-      x: xGameWeek,
+      x: y1Attendance.map((temp, index) => 'wk ' + (index + 1)),
       y: y1Attendance,
       type: "bar",
       name: 'Attendance',
@@ -154,7 +151,7 @@ function bardata_pull(selectedTeam) {
     // Line Chart - Trace2 for capacity
 
     var traceCapacity = {
-      x: xGameWeek,
+      x: y2Capacity.map((temp, index) => 'wk ' + (index + 1)),
       y: y2Capacity,
       type: "bar",
       name: 'Capacity',
@@ -168,7 +165,7 @@ function bardata_pull(selectedTeam) {
 
     // Formatting the bar plot
     var barPlotLayout = {
-      title: "<b>Attendance vs. Capacity by Game Day</b>",
+      title: "<b>Attendance vs. Capacity by Game Week</b>",
       xaxis: { autorange: true },
 
       yaxis: { autorange: true },
@@ -193,7 +190,7 @@ function demodata_pull(selectedTeam) {
     );
     d3.select('#team_logo').attr("src", dataByTeam[0].WikipediaLogoUrl);
     d3.select('#team_name').attr("src", dataByTeam[0].WikipediaWordMarkUrl);
-    //d3.select('#staidum_name').text("Stadium Name: " + dataByTeam[0].);
+    d3.select('#stadium_name').text("Stadium Name: " + dataByTeam[0].Name_x);
     d3.select('#capacity').text("Capacity: " + dataByTeam[0].Capacity);
     d3.select('#city_state').text("City, State: " + dataByTeam[0].City_y + ", " + dataByTeam[0].State);
     d3.select('#turf_type').text("Turf Type: " + dataByTeam[0].PlayingSurface);

@@ -9,7 +9,7 @@
   <style>
     .chartBox {
       width: 800px;
-      padding: 20px;
+      /* padding: 20px; */
     }
     .title{
       text-align: center;
@@ -31,12 +31,9 @@
 <!-------------------------------------------------------------Design Container Begin --------------------------------------------------------->
 	<div class="container-fluid">
     <div class = "row">
-      <h1 class = "title"> NFL </h1>
-    </div>
-    <div class = "row">
       <div class = "col-md-4">
 
-          <div class="data"></div>
+        <div class="data"></div>
 <!---------------------------------------------------------Drop Down Begin------------------------------------------------------>
           <select id="team_select">
             <option value="ARI">Arizona Cardinals</option>
@@ -72,50 +69,54 @@
             <option value="TEN">Tennessee Titans</option>
             <option value="WAS">Washington Commanders</option>
           </select>
+        </div>
 <!---------------------------------------------------------Drop Down End------------------------------------------------------>
 
 <!-----------------------------------------------------------purely for the id = "type"--------------------------------------->
-          <select id="type">
-            <option value="HomeScore">Home Team Score</option>
-            <option value="Attendance">Attendance</option>
-          </select>
-<!-----------------------------------------------------------purely for the id = "type"--------------------------------------->
-
           <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title">Team Demographic Info</h3>
             </div>
             <div id="sample-metadata" class="panel-body">
               <p><strong>Team Logo:</strong> </p>
-              <img id="team_logo"></img>
+              <img id="team_logo" width = "150" height = "150">
               <p><strong>Team Name</strong></p>
-              <img id="team_name"></img>
+              <img id="team_name" width = "300" height = "150">
               <p id="stadium_name"></p>
-              <img id="stadium_image"></img>
               <p id="capacity"></p>
               <p id="city_state"></p>
               <p id="turf_type"></p>
               <p id="stadium_type"></p>
             </div>
+          </div>
+        </div>
+        
 <!-- -------------------------------------------------------------Chart JS Begin -------------------------------------------------------------->
-            <div class="chartBox" style="position: relative">
+            <!-- <div class="chartBox" style="position: relative">
               <div>
                 <canvas id="myChart"></canvas>
               </div>
-            </div>
+            </div> -->
 <!-- -------------------------------------------------------------Chart JS End -------------------------------------------------------------->
-          </div>
-        </div>
-      </div>
       <div class = "col-md-8">
-        <div id="scatter"></div>
-        <div class="well">
-        </div>
-        <div id="bar"></div>
+          <div id="scatter"></div>
+          <div class="well">
+          </div>
+          <div id="bar"></div>
       </div>
     </div>
-	</div>
+ 
 <!-------------------------------------------------------------Design Container End --------------------------------------------------------->
+  <div class="row">
+    <div class="col-md-12">        
+          <div class="chartBox" style="position: relative">
+            <div>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+    </div>
+  </div>  
+</div>
 <!-------------------------------------------------------------Scripts----------------------------------------------------------------------->
 	<script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
