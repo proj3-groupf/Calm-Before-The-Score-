@@ -72,6 +72,7 @@ This dashboard will help travelers keep their focus on what is important to thei
 - Pull data from our Flask Powered API.
 - Allow users to select their team.
 - Plot a line graph of team scores for each home game.
+    - ==NEW JAVASCRIPT LIBRARY USED== : CHARTS.JS
 - Plot a scatter chart for previous high and low forecasted temperatures. 
 - Plot a bar chart for stadium capacity vs. game day attendance. 
 
