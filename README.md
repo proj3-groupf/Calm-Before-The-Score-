@@ -89,4 +89,12 @@ Using the Falcons as an example, this is the result of the final website:
 
 ![](Image%20Resources/full-screen-visual.png)
 
+Below are close-ups of the 3 visualizations created:
+- Home Team vs. Away Team Scores:
+    ![](Image%20Resources/ATL-Vis-1.png)
+- High vs. Low Temperature by Game Week:
+    ![](Image%20Resources/ATL-Vis-2.png)
+- Attendance vs. Capacity by Game Week:
+    ![](Image%20Resources/ATL-Vis-3.png)
+
 
