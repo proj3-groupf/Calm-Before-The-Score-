@@ -84,3 +84,8 @@ This dashboard will help travelers keep their focus on what is important to thei
 <hr>
 
 ## **Final Website**: 
+
+The final website looks like this:
+![](Image%20Resources/full-screen-visual.png)
+
+
