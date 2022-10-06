@@ -21,7 +21,7 @@ Maheen Abdulwaheed, Gautam Iyer, Ashley Moore, Marjorie Muñoz, Elena Ortiz, Ami
 
 ## **Project Materials**
 
-- The jupyter [notebook](NFL%20Dashboard.ipynb), where the ETL process was completed.
+- The Jupyter folder, which contains the [notebook](Jupyter%20notebook/NFL%20Dashboard.ipynb) where the ETL process was completed.
 - The Flask App [folder](Flask_app), which contains:
     - The [app.py](Flask_app/app.py) script.
     - The [static](Flask_app/static/) folder, which contains the [JS code](Flask_app/static/js/) and the [css](Flask_app/static/css/style.css).
