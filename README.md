@@ -85,7 +85,8 @@ This dashboard will help travelers keep their focus on what is important to thei
 
 ## **Final Website**: 
 
-The final website looks like this:
+Using the Falcons as an example, this is the result of the final website:
+
 ![](Image%20Resources/full-screen-visual.png)
 
 
