@@ -102,7 +102,7 @@ function data_pull(selectionID) {
         name: 'High Temp',
         marker: {
           color: "red",
-          width: 800,
+          //width: 800,
         }
       };
 
@@ -115,7 +115,7 @@ function data_pull(selectionID) {
         name: 'Low Temp',
         marker: {
           color: "blue",
-          width: 800,
+          //width: 800,
         }
       };
       // Throw the bar chart data in an array
@@ -131,8 +131,10 @@ function data_pull(selectionID) {
 
       };
 
+      var config = {responsive: true};
+
       // Do the Plotting
-      Plotly.newPlot("scatter", lineDataArray, linePlotLayout);
+      Plotly.newPlot("scatter", lineDataArray, linePlotLayout, config);
     });
   }
 // ----------------------------------------------------------------------------------------//
@@ -156,7 +158,7 @@ function bardata_pull(selectedTeam) {
       name: 'Attendance',
       marker: {
         color: "pink",
-        width: 800,
+        //width: 800,
       }
     };
 
@@ -169,7 +171,7 @@ function bardata_pull(selectedTeam) {
       name: 'Capacity',
       marker: {
         color: "cyan",
-        width: 800,
+        //width: 800,
       }
     };
     // Throw the bar chart data in an array
@@ -184,9 +186,11 @@ function bardata_pull(selectedTeam) {
       margin: { t: 60, 1: 120 }
 
     };
+    
+    var config = {responsive: true};
 
     // Do the Plotting
-    Plotly.newPlot("bar", barDataArray, barPlotLayout);
+    Plotly.newPlot("bar", barDataArray, barPlotLayout, config);
   });
 }
 
