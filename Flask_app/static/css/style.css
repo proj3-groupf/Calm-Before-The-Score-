@@ -4,6 +4,20 @@
     background-color: #7FB3D5;
 }
 
+.team-demographic-info {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+img {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .panel-default > .panel-heading-custom {
     text-align: center;
 }

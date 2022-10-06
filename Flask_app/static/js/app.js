@@ -207,6 +207,9 @@ function demodata_pull(selectedTeam) {
     d3.select('#city_state').text("City, State: " + dataByTeam[0].City_y + ", " + dataByTeam[0].State);
     d3.select('#turf_type').text("Turf Type: " + dataByTeam[0].PlayingSurface);
     d3.select('#stadium_type').text("Stadium Type: " + dataByTeam[0].Type);
+    
+    d3.select('.team-demographic-info').style('background-color', '#' + dataByTeam[0].SecondaryColor);
+    d3.selectAll('.team-text').style('color', '#' + dataByTeam[0].PrimaryColor);
   });
 }
   
