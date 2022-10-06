@@ -49,7 +49,7 @@ This dashboard will help travelers keep their focus on what is important to thei
 ## **Part 1**: ETL the Data
 
 ### **Extract**
-- For this project, we used the sportsdata [API](https://sportsdata.io/nfl-api), which provides real-time data for every NFL game. We used a [Jupyter Notebook](NFL%20Dashboard.ipynb) to make 3 different calls to the API to get 2021 score [data](https://api.sportsdata.io/v3/nfl/scores/json/Scores/2021?key=ec966d78fab6468eaa542e1e7e883a44), stadium [data](https://api.sportsdata.io/v3/nfl/scores/json/Stadiums?key=ec966d78fab6468eaa542e1e7e883a44) and team [data](https://api.sportsdata.io/v3/nfl/scores/json/Teams/2021?key=ec966d78fab6468eaa542e1e7e883a44).
+- For this project, we used the sportsdata [API](https://sportsdata.io/nfl-api), which provides real-time data for every NFL game. We used a [Jupyter Notebook](Jupyter%20notebook/NFL%20Dashboard.ipynb) to make 3 different calls to the API to get 2021 score [data](https://api.sportsdata.io/v3/nfl/scores/json/Scores/2021?key=ec966d78fab6468eaa542e1e7e883a44), stadium [data](https://api.sportsdata.io/v3/nfl/scores/json/Stadiums?key=ec966d78fab6468eaa542e1e7e883a44) and team [data](https://api.sportsdata.io/v3/nfl/scores/json/Teams/2021?key=ec966d78fab6468eaa542e1e7e883a44).
 
 ### **Transform**
 - The score data was converted into a DataFrame which contained 272 rows (one for each game in the season). 
