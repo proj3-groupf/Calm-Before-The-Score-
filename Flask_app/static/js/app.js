@@ -11,11 +11,14 @@ function data_pull(selectionID) {
         return team === game.HomeTeam
       });
 
+      // 
+
+      // -------------------------------------------Sessy Chart JS Graph Begin --------------------------------------------------------
       // home and away scores
       var homeScore = homeTeamGames.map(game => game.HomeScore);
       var awayScore = homeTeamGames.map(game => game.AwayScore);
   
-      // -------------------------------------------Sessy Chart JS Graph Begin --------------------------------------------------------
+   
       // Couldn't get Chart JS to work like plotly did below, so that's wha the code is here
       // setup block
       const data = {
@@ -24,14 +27,14 @@ function data_pull(selectionID) {
           {
             label: 'HomeTeam',
             data: homeScore,
-            borderColor: 'rgb(255,192,203)',
-            backgroundColor: 'rgb(255,105,180)',
+            borderColor: 'darkorange',
+            backgroundColor: 'orange',
           },
           {
             label: 'AwayTeam',
             data: awayScore,
-            borderColor: 'rgb(255,250,205)',
-            backgroundColor: 'rgb(255,228,196)',
+            borderColor: 'darkgrey',
+            backgroundColor: 'grey',
           }
         ]
       
@@ -40,15 +43,24 @@ function data_pull(selectionID) {
       // config block
       const config = {
         type: 'line',
-        data,
+        data: data,
         options: {
+          responsive: true,
             scales: {
                 y: {
                     beginAtZero: true
                 }
+            },
+            plugins: {
+              title: {
+                display: true,
+                text: "Home Team vs. Away Team Scores"
+              }
             }
-        }
-      }
+        },
+       
+      };
+
       // destroy chart when new selection is chosen so it can rebuild canvas
       let chartStatus = Chart.getChart("myChart"); // <canvas> id
       if (chartStatus != undefined) {
@@ -60,7 +72,7 @@ function data_pull(selectionID) {
         config
       );
   
-    // -------------------------------------------Sessy Chart JS Graph Begin--------------------------------------------------------
+    // -------------------------------------------Calling the functions --------------------------------------------------------
       scatterdata_pull(team)
       bardata_pull(team)
       demodata_pull(team)
