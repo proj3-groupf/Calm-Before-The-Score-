@@ -86,7 +86,7 @@ This dashboard will help travelers keep their focus on what is important to thei
 
 ## **Final Website**: 
 
-All you have to do is SELECT A TEAM (e.g. The Falcons) AND:
+All you have to do is SELECT A TEAM (e.g. The Falcons) AND HERE'S THE WEBSITE:
 
 ![](Image%20Resources/full-screen-visual.png)
 
