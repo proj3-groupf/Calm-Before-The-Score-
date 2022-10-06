@@ -86,9 +86,7 @@ This dashboard will help travelers keep their focus on what is important to thei
 
 ## **Final Website**: 
 
-SELECT A TEAM AND:
-
-Using the Falcons as an example, this is the result of the final website:
+All you have to do is SELECT A TEAM (e.g. The Falcons) AND:
 
 ![](Image%20Resources/full-screen-visual.png)
 
