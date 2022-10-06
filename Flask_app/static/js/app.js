@@ -11,13 +11,63 @@ function data_pull(selectionID) {
         return team === game.HomeTeam
       });
 
-      var homeTeamScores = homeTeamGames.map(game => game.HomeScore);
-      var selectedHomeTeamValue = homeTeamGames.map(game => game[selectedType])
+      // home and away scores
+      var homeScore = homeTeamGames.map(game => game.HomeScore);
+      var awayScore = homeTeamGames.map(game => game.AwayScore);
+  
+      // -------------------------------------------Sessy Chart JS Graph Begin --------------------------------------------------------
+      // Couldn't get Chart JS to work like plotly did below, so that's wha the code is here
+      // setup block
+      const data = {
+        labels: ['wk1', 'wk2', 'wk3', 'wk4', 'wk5', 'wk6', 'wk7', 'wk8'],
+        datasets: [
+          {
+            label: 'HomeTeam',
+            data: homeScore,
+            borderColor: 'rgb(255,192,203)',
+            backgroundColor: 'rgb(255,105,180)',
+          },
+          {
+            label: 'AwayTeam',
+            data: awayScore,
+            borderColor: 'rgb(255,250,205)',
+            backgroundColor: 'rgb(255,228,196)',
+          }
+        ]
+      
+      }
+  
+      // config block
+      const config = {
+        type: 'line',
+        data,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+      }
+      // destroy chart when new selection is chosen so it can rebuild canvas
+      let chartStatus = Chart.getChart("myChart"); // <canvas> id
+      if (chartStatus != undefined) {
+        chartStatus.destroy();}
+  
+      // init block  
+      myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+  
+    // -------------------------------------------Sessy Chart JS Graph Begin--------------------------------------------------------
       scatterdata_pull(team)
       bardata_pull(team)
       demodata_pull(team)
     })
   });
+
+
 
   //-----------------------------------------------------------------------------//
   //VISUALIZATION - SCATTER CHART - High and Low Forcast Temps by Game Day
@@ -151,65 +201,7 @@ function demodata_pull(selectedTeam) {
   });
 }
   
-  // var data = {
-  //   // A labels array that can contain any sort of values
-  //   labels: [gameData.Date],
-  //   // Our series array that contains series objects or in this case series data arrays
-  //   series: [
-  //     gameData.HomeScore
-  //   ]
-  // };
-
-  // // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
-  // // as you saw in the previous example
-  // var options = {
-  //   width: 300,
-  //   height: 200
-  // };
-
-  // Create a new line chart object where as first parameter we pass in a selector
-  // that is resolving to our chart container element. The Second parameter
-  // is the actual data object. As a third parameter we pass in our custom options.
-  //new Chartist.Line('.ct-chart', data, options);
 
 
-//}
-
-//data_pull()
-
-// -------------------------------------- Creating Line Chart----------------------------------------------------------------------------
-
-// // --------------------------------Creating Dropdown ----------------------------------
-
-//-----------------------------------------------------------------------------//
-// Functions called in the index.html file
-
-// function init() {
-//   d3.json("/data").then(function (data) {
-//     // console.log("samples.json from init function:", data);
-
-//     // Using D3 to select from a dropdown menu
-//     let DropDown = d3.select(`#selDataset`);
-
-//     // Enter the Sample Names into the dropdown menu
-//     data[272].homeTeam.forEach((homeTeam) => {
-//       DropDown.append(`option`).text(homeTeam).property(`value`, homeTeam);
-//     });
-
-//     // Get data from first sample to enter into the plots
-//     const first_sample = data[272].HomeTeam[0];
-//     data_pull(first_sample);
-//     // metadata_pull(first_sample);
-//   });
-// }
-
-// // When a new sample is selected, get new data
-// function optionChange(new_sample) {
-//   data_pull(new_sample);
-//   // metadata_pull(new_sample);
-// }
-
-// // Dashboard Initialization
-// init();
 }
 data_pull()
