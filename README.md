@@ -27,7 +27,7 @@ Maheen Abdulwaheed, Gautam Iyer, Ashley Moore, Marjorie Muñoz, Elena Ortiz, Ami
     - The [static](Flask_app/static/) folder, which contains the [JS code](Flask_app/static/js/) and the [css](Flask_app/static/css/style.css).
     - The [templates](Flask_app/templates/index.html) folder, which contains the [index.html](Flask_app/templates/index.html) file.
 - The images [folder](Image%20Resources).
-- The final [presentation](Project%20Proposal%20and%20Presentation).
+- The final [presentation](Project%20Proposal%20and%20Presentation/Project%203%2C%20Group%20F_%20NFL%20Presentations.pptx).
 
 <hr>
 
